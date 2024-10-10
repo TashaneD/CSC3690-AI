@@ -36,7 +36,7 @@ def hill_climbing(graph, heuristics, start, goal):
 
     while current_node != goal:
         neighbors = graph[current_node]
-        if not neighbors:
+        if len(neighbors) == 0:
             print("There are no more neighbors to explore")
             return path
 
